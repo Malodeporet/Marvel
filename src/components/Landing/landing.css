@@ -1,5 +1,4 @@
 .welcomePage {
-    background-color: var(--red-color);
     background-image: url(../../assets/images/wolverine.png);
     background-repeat: no-repeat;
     background-position: center center;
@@ -7,7 +6,10 @@
     justify-content: space-between;
     height: 540px;
   }
-  
+
+  .welcomeBox{
+    background-image:url(../../assets/images/red-futurist.png);
+  }
   .startingImg {
     background-image: url(../../assets/images/xmen.png);
   }

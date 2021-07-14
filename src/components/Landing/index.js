@@ -11,10 +11,10 @@ const Landing = () => {
     console.log(btn);
 
     const refWolverine = useRef(null);
-    
+
     useEffect(() => {
         refWolverine.current.classList.add("startingImg");
-        setTimeout(() =>{
+        setTimeout(() => {
             refWolverine.current.classList.remove("startingImg");
             setBtn(true)
         }, 1000);
@@ -32,24 +32,26 @@ const Landing = () => {
         if (refWolverine.current.classList.contains("leftImg")) {
             refWolverine.current.classList.remove("leftImg");
         } else if (refWolverine.current.classList.contains("rightImg")) {
-        refWolverine.current.classList.remove("rightImg");
+            refWolverine.current.classList.remove("rightImg");
         }
     }
 
     const displayBtn = btn && (
         <Fragment>
-        <div onMouseOver={setLeftImg} onMouseOut={clearImg} className="leftBox">
-                <Link className="btn-welcome" to ="/signup">Inscription</Link>
+            <div onMouseOver={setLeftImg} onMouseOut={clearImg} className="leftBox">
+                <Link className="btn-welcome" to="/signup">Inscription</Link>
             </div>
             <div onMouseOver={setRightImg} onMouseOut={clearImg} className="rightBox">
-                <Link className="btn-welcome" to ="/login">Connexion</Link>
+                <Link className="btn-welcome" to="/login">Connexion</Link>
             </div>
-            </Fragment>
+        </Fragment>
     )
 
     return (
-    <main ref={refWolverine} className="welcomePage">
-            { displayBtn }
+        <main className="welcomeBox">
+            <div ref={refWolverine} className="welcomePage">
+                {displayBtn}
+            </div>
         </main>
     )
 }
