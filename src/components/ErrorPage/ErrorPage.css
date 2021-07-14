@@ -1,0 +1,16 @@
+.quiz-bg {
+    margin: 0;
+    padding: 0;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    background-color: var(--white-color);
+    padding: 30px;
+    flex: 0 1 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }

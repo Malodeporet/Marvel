@@ -1,0 +1,123 @@
+.modalBackground {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContainer {
+    flex: 0 1 70%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modalHeader {
+    background-color: var(--dark-red-color);
+    padding: 15px;
+    color: var(--white-color);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .modalHeader h2 {
+    margin: 0;
+    color: var(--white-color);
+  }
+  
+  .modalBody {
+    padding: 30px 10px;
+    background: var(--white-color);
+    height: 400px;
+    overflow: auto;
+  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .comicImage {
+    flex: 0 1 40%;
+    align-self: stretch;
+  }
+  
+  .comicDetails {
+    flex: 0 1 50%;
+    align-self: stretch;
+  }
+  
+  .comicImage img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .comicImage p {
+    font-size: 14px;
+    font-style: italic;
+    color: var(--dark-grey-color);
+  }
+  
+  .comicDetails h3 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--light-grey-color);
+    text-transform: uppercase;
+  }
+  
+  .comicDetails p {
+    font-style: italic;
+    margin-bottom: 40px;
+    color: var(--dark-grey-color);
+  }
+  
+  .comicDetails a {
+    flex: 0 1 60%;
+    display: inline-block;
+    background-color: var(--dark-red-color);
+    padding: 10px 15px;
+    margin-right: 10px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    transform: skew(-15deg);
+  }
+  
+  .comicDetails a:hover {
+    background-color: var(--dark-grey-color);
+  }
+  
+  .modalFooter {
+    background-color: var(--white-color);
+    padding: 10px;
+    color: var(--white-color);
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid var(--light-grey-color);
+  }
+  
+  .modalBtn {
+    background: var(--light-grey-color);
+    padding: 9px 5px;
+    width: 90px;
+    color: var(--deep-black-color);
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid var(--light-grey-color);
+    margin: 0;
+    font-size: 15px;
+  }
+  
+  .modalBtn:hover {
+    background: var(--red-color);
+    color: var(--white-color);
+    border: 1px solid var(--light-grey-color);
+  }
