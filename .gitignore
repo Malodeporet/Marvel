@@ -7,7 +7,6 @@
 /node_modules
 /.pnp
 .pnp.js
-.github/workflows
 
 # testing
 /coverage

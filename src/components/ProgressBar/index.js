@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-
+import './ProgressBar.css'
 const ProgressBar = ({idQuestion, maxQuestions}) => {
 
     const getWidth = (totalQuestions, questionId) => {

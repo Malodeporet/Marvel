@@ -1,5 +1,5 @@
 import React from 'react'
-import batman from '../../images/batman.png'
+import batman from '../../assets/images/batman.png'
 import './ErrorPage.css'
 
 const centerH2 = {

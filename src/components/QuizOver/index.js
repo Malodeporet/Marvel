@@ -3,6 +3,7 @@ import { GiTrophyCup } from 'react-icons/gi'
 import Loader from '../Loader'
 import Modal from '../Modal'
 import axios from 'axios'
+import './QuizOver.css'
 
 const QuizOver = React.forwardRef((props, ref) => {
 

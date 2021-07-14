@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Stepper from 'react-stepper-horizontal'
+import './Levels.css'
 
 const Levels = ({levelNames, quizLevel}) => {
 
