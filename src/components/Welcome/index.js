@@ -2,7 +2,9 @@ import React, { useState, useContext, useEffect } from 'react';
 import { FirebaseContext } from '../Firebase';
 import Logout from '../Logout';
 import Quiz from '../Quiz';
-import Loader from '../Loader'
+import Loader from '../Loader';
+import './Welcome.css'
+
 
 
 const Welcome = props => {

@@ -35,6 +35,7 @@
   --deep-black-color: #000000;
 }
 
+/* Main */
 * {
   font-family: 'Roboto', sans-serif;
 }
@@ -70,8 +71,8 @@ h3 {
 body {
   margin: 0;
   padding: 0;
-  background-image: url(images/bg-noise-texture.png);
-  background-repeat: repeat;
+  background-image: url(images/metal2.png);
+  
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -85,90 +86,14 @@ hr {
   margin: 10px 0;
 }
 
-header {
-  display: flex;
-  justify-content: center;
-}
-
-.banner-container {
-  padding: 20px 0;
-  flex-basis: 80%;
-}
-
 main {
   flex-grow: 1;
 }
-/* END MAIN */
-
-/* WELCOME PAGE */
-.welcomePage {
-  background-color: var(--red-color);
-  background-image: url(images/wolverine.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  display: flex;
-  justify-content: space-between;
-  height: 500px;
-}
-
-.startingImg {
-  background-image: url(images/xmen.png);
-}
-
-.leftImg {
-  background-image: url(images/wolverine.png), url(images/griffes-gauche.png);
-}
-
-.rightImg {
-  background-image: url(images/wolverine.png), url(images/griffes-droit.png);
-}
-
-.leftBox {
-  display: flex;
-  flex: 0 1 35%;
-  align-items: flex-start;
-  justify-content: flex-end;
-}
-
-.rightBox {
-  display: flex;
-  flex: 0 1 35%;
-  align-items: flex-start;
-}
-
-.btn-welcome {
-  border: 2px solid var(--white-color);
-  color: var(--white-color);
-  padding: 12px 25px;
-  border-radius: 5px;
-  background-color: transparent;
-  font-weight: normal;
-  font-size: 19px;
-  text-align: center;
-  text-decoration: none;
-  margin-top: 150px;
-}
-
-.btn-welcome:hover {
-  border: 2px solid var(--white-color);
-  color: var(--red-color);
-  background-color: var(--white-color);
-}
-/* END WELCOME PAGE */
-
-/* TOASTIFY COLOR */
-.toastify-color-welcome {
-  color: var(--black-color);
-}
-.toastify-color {
-  color: var(--white-color);
-}
-/* END TOASTIFY COLOR */
-
 
 /* SIGNUP - LOGIN - FORGETPASSWORD */
 .signUpLoginBox {
-  background-image: url(images/bg-noise-texture.png);
+  background-image: url(images/red-futurist.png);
+  width:100;
   background-repeat: repeat;
   -webkit-box-shadow: inset 0px 143px 108px -18px rgba(0, 0, 0, 0.39);
   -moz-box-shadow: inset 0px 143px 108px -18px rgba(0, 0, 0, 0.39);
@@ -180,6 +105,8 @@ main {
 .slContainer {
   flex: 0 1 80%;
   display: flex;
+  background-repeat: no-repeat;
+  width:100
 }
 
 .formBoxLeftSignup {
@@ -221,6 +148,7 @@ main {
 
 .formContent {
   width: 100%;
+  height: 600px;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -308,127 +236,20 @@ button[disabled]:hover {
   height: 50px;
   margin-top: 35px;
   padding-top: 15px;
+  line-height:30px;
   border-top: 1px dashed var(--light-grey-color);
 }
 
 .simpleLink {
   color: var(--white-color);
   text-decoration: none;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .simpleLink:hover {
   color: var(--red-color);
 }
 /* END SIGNUP - LOGIN - FORGETPASSWORD */
-
-/* LOGOUT SWITCH */
-.logoutContainer {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 30px;
-}
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--light-grey-color);
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked+.slider {
-  background-color: var(--red-color);
-}
-
-input:checked+.slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-/* END LOGOUT SWITCH */
-
-/* ANSWER OPTIONS*/
-.answerOptions {
-  padding: 10px;
-  background-color: var(--light-grey-color);
-  line-height: 20px;
-  text-align: left;
-  border: none;
-  color: var(--black-color);
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 0;
-}
-
-.answerOptions:hover {
-  background-color: var(--red-color);
-  -webkit-box-shadow: 0px 4px 16px -5px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 4px 16px -5px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 4px 16px -5px rgba(0, 0, 0, 0.75);
-  cursor: pointer;
-  color: var(--white-color);
-}
-/* END ANSWER OPTIONS*/
-
-/* SUBMIT BUTTON */
-.btnSubmit {
-  font-size: 16px;
-  padding: 6px;
-  background-color: var(--red-color);
-  color: var(--white-color);
-  border-color: var(--red-color);
-  border-radius: 5px;
-  width: 150px;
-  display: block;
-  margin: 0 auto;
-  cursor: pointer;
-}
-
-.selected {
-  background-color: var(--red-color);
-  color: var(--white-color);
-  text-transform: uppercase;
-}
-/* END SUBMIT BUTTON */
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 540px) {

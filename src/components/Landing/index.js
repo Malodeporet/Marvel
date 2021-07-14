@@ -1,5 +1,7 @@
 import React, { useRef, useEffect, useState, Fragment } from 'react'
 import { Link } from 'react-router-dom';
+import './landing.css'
+
 
 
 const Landing = () => {

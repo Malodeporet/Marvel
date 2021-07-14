@@ -6,6 +6,8 @@ import Levels from '../Levels';
 import ProgressBar from '../ProgressBar';
 import QuizOver from '../QuizOver'
 import { FaChevronRight } from 'react-icons/fa';
+import './Quiz.css'
+
 
 
 toast.configure();
@@ -53,7 +55,7 @@ class Quiz extends Component {
 
             this.setState({ showWelcomeMsg: true })
 
-            toast(`Bienvenue ${pseudo}`, {
+            toast(`Bienveue ${pseudo} !`, {
                 position: "top-right",
                 autoClose: 2000,
                 hideProgressBar: false,

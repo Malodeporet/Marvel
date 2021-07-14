@@ -2,8 +2,6 @@ import React, { useState, useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { FirebaseContext } from '../Firebase';
 
-
-
 const Login = (props) => {
 
     const firebase = useContext(FirebaseContext);
@@ -37,7 +35,7 @@ const Login = (props) => {
     };
 
     return (
-        <div className="singnUpLoginBox">
+        <div className="signUpLoginBox">
             <div className="slContainer">
                 <div className="formBoxLeftLogin">
 
@@ -63,7 +61,7 @@ const Login = (props) => {
 
                         </form>
                         <div className="linkContainer">
-                            <Link className="simpleLink" to="/signup">Nouveau sur Marvel Quiz? Inscrivez-vous maintenant.</Link>
+                            <Link className="simpleLink" to="/signup">Nouveau sur Marvel Quiz ? Inscrivez-vous maintenant.</Link>
                             <br />
                             <Link className="simpleLink" to="/forgetpassword">Mot de passe oublié ? Récupérez-le ici.</Link>
                         </div>

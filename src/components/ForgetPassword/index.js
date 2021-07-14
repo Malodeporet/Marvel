@@ -31,7 +31,7 @@ const ForgetPassword = props => {
     const disabled = email === ""
 
     return (
-        <div className="singnUpLoginBox">
+        <div className="signUpLoginBox">
             <div className="slContainer">
                 <div className="formBoxLeftForget">
 
