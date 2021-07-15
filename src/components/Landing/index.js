@@ -39,7 +39,6 @@ const Landing = () => {
     }
   }
 
-  
   const displayBtn = btn && (
     <Fragment>
        <div className="leftBox" onMouseOver={setLeftImg} onMouseOut={clearImg}>

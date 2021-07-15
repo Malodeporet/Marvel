@@ -1,25 +1,15 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 //import batman from '../../assets/images/batman.png'
 import './ErrorPage.css'
-
-const centerH2 = {
-    textAlign: 'center',
-    marginTop: '50px',
-}
-
-const centerImg = {
-    display:"block",
-    margin:"40px auto",
-}
+import error from '../../assets/images/error404.jpeg'
 
 const ErrorPage = () => {
     return (
-        <div className="quiz-bg">
-            <div className="container">
-                <h2 style={centerH2}>Oups, cette page n'existe pas!</h2>
-                {/* <img style={centerImg} src={batman} alt="error page" /> */}
+        <Fragment>
+            <div className="errorPage">
+            <img src={ error } alt="error Page"/>
             </div>
-        </div>
+        </Fragment>
     )
 }
 

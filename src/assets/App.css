@@ -230,6 +230,7 @@ button[disabled]:hover {
 .simpleLink:hover {
   color: var(--red-color);
 }
+
 /* END SIGNUP - LOGIN - FORGETPASSWORD */
 
 /* MEDIA QUERIES */

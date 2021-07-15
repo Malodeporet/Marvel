@@ -95,6 +95,7 @@ class Quiz extends Component {
                 draggable: true,
                 bodyClassName: "toastify-success",
                 
+                
             });
         } else {
             toast.error('Raté 0', {

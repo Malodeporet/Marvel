@@ -3,16 +3,16 @@
   }
   
   .toastify-success {
-    height: 150px;
-  width: 150px;
+  min-height: 200px;
+  min-width: 200px;
+  background-image: url(../../assets/images/deadpoolSuccess.png);
   text-align: center;
   color: var(--white-color);
   font-weight: bold;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../../assets/images/deadpoolSuccess.png);
   background-repeat: no-repeat;
-  background-position: center center;  
+  background-position: center center;
   }
 
   .toastify-fail {
@@ -23,7 +23,7 @@
     font-weight: bold;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(../../assets/images/CaptainAmericaFail.png);
+    background-image: url(../../assets/images/deadpoolLoose.png);
     background-repeat: no-repeat;
     background-position: center center;
   }

@@ -58,8 +58,9 @@ const ForgetPassword = props => {
                                 <input onChange={e => setEmail(e.target.value)} value={email} type="email" autoComplete="off" required />
                                 <label htmlFor="email">Email</label>
                             </div>
-
+                            <label for="switch">
                             <button disabled={disabled}>Récupérer</button>
+                            </label>
 
                         </form>
                         <div className="linkContainer">
