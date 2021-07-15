@@ -88,12 +88,13 @@ class Quiz extends Component {
 
             toast.success('Bravo +1', {
                 position: "top-right",
-                autoClose: 2000,
+                autoClose: 200000,
                 hideProgressBar: false,
                 closeOnClick: true,
                 pauseOnHover: true,
                 draggable: true,
-                bodyClassName: "toastify-color"
+                bodyClassName: "toastify-success",
+                
             });
         } else {
             toast.error('Raté 0', {
@@ -103,7 +104,7 @@ class Quiz extends Component {
                 closeOnClick: true,
                 pauseOnHover: true,
                 draggable: true,
-                bodyClassName: "toastify-color"
+                bodyClassName: "toastify-fail"
             });
         }
     }

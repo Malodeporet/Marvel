@@ -1,59 +1,61 @@
 import React, { useRef, useEffect, useState, Fragment } from 'react'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import './landing.css'
-
 
 
 const Landing = () => {
 
-    const [btn, setBtn] = useState(false);
+  const refWolverine = useRef(false)
 
-    console.log(btn);
+  const [btn, setBtn] = useState(null)
 
-    const refWolverine = useRef(null);
 
-    useEffect(() => {
-        refWolverine.current.classList.add("startingImg");
-        setTimeout(() => {
-            refWolverine.current.classList.remove("startingImg");
-            setBtn(true)
-        }, 1000);
-    }, [])
+  useEffect(() => {
+    // Add ClassName to show  claws
+    refWolverine.current.classList.add('startingImg')
+    setTimeout(() => {
+      // remove className tohide  claws
+      refWolverine.current.classList.remove('startingImg')
+      setBtn(true)
+    }, 500)
+  }, [])
 
-    const setLeftImg = () => {
-        refWolverine.current.classList.add("leftImg");
+  // Show left claws on MouseOver left Div
+  const setLeftImg = () => {
+    refWolverine.current.classList.add('leftClaws')
+  }
+
+  // Show left claws on MouseOver right Div
+  const setRighttImg = () => {
+    refWolverine.current.classList.add('rightClaws')
+  }
+
+  // Clear claws onMouseOut
+  const clearImg = () => {
+    if(refWolverine.current.classList.contains('leftClaws')) {
+      refWolverine.current.classList.remove('leftClaws')
+    } else {
+      refWolverine.current.classList.remove('rightClaws')
     }
+  }
 
-    const setRightImg = () => {
-        refWolverine.current.classList.add("rightImg");
-    }
+  
+  const displayBtn = btn && (
+    <Fragment>
+       <div className="leftBox" onMouseOver={setLeftImg} onMouseOut={clearImg}>
+        <Link className="btn-welcome" to="/signup" >Inscription</Link>
+      </div>
+      <div className="rightBox" onMouseOver={setRighttImg} onMouseOut={clearImg}>
+        <Link className="btn-welcome" to="/login">Connexion</Link>
+      </div>
+    </Fragment>
+  )
 
-    const clearImg = () => {
-        if (refWolverine.current.classList.contains("leftImg")) {
-            refWolverine.current.classList.remove("leftImg");
-        } else if (refWolverine.current.classList.contains("rightImg")) {
-            refWolverine.current.classList.remove("rightImg");
-        }
-    }
-
-    const displayBtn = btn && (
-        <Fragment>
-            <div onMouseOver={setLeftImg} onMouseOut={clearImg} className="leftBox">
-                <Link className="btn-welcome" to="/signup">Inscription</Link>
-            </div>
-            <div onMouseOver={setRightImg} onMouseOut={clearImg} className="rightBox">
-                <Link className="btn-welcome" to="/login">Connexion</Link>
-            </div>
-        </Fragment>
-    )
-
-    return (
-        <main className="welcomeBox">
-            <div ref={refWolverine} className="welcomePage">
-                {displayBtn}
-            </div>
-        </main>
-    )
+  return (
+    <main ref={refWolverine}className="welcomePage">
+      {displayBtn}
+    </main>
+  )
 }
 
-export default Landing
+export default Landing;

@@ -1,6 +1,29 @@
 .toastify-color-welcome {
     color: var(--black-color);
   }
-  .toastify-color {
+  
+  .toastify-success {
+    height: 150px;
+  width: 150px;
+  text-align: center;
+  color: var(--white-color);
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../../assets/images/deadpoolSuccess.png);
+  background-repeat: no-repeat;
+  background-position: center center;  
+  }
+
+  .toastify-fail {
+    min-height: 200px;
+    min-width: 200px;
+    text-align: center;
     color: var(--white-color);
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../../assets/images/CaptainAmericaFail.png);
+    background-repeat: no-repeat;
+    background-position: center center;
   }

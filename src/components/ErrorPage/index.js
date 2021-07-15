@@ -1,5 +1,5 @@
 import React from 'react'
-import batman from '../../assets/images/batman.png'
+//import batman from '../../assets/images/batman.png'
 import './ErrorPage.css'
 
 const centerH2 = {
@@ -17,7 +17,7 @@ const ErrorPage = () => {
         <div className="quiz-bg">
             <div className="container">
                 <h2 style={centerH2}>Oups, cette page n'existe pas!</h2>
-                <img style={centerImg} src={batman} alt="error page" />
+                {/* <img style={centerImg} src={batman} alt="error page" /> */}
             </div>
         </div>
     )
