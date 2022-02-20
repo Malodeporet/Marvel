@@ -14,18 +14,18 @@ const ForgetPassword = props => {
     const handleSubmit = e => {
         e.preventDefault();
         firebase.passwordReset(email)
-        .then(() => {
-            setError(null);
-            setSucess(`Consultez votre email ${email} pour changer le mot de passe`)
-            setEmail("");
-            setTimeout(() => {
-                props.history.push('/login')
-            }, 5000)
-        })
-        .catch(error => {
-            setError(error);
-            setEmail("");
-        })
+            .then(() => {
+                setError(null);
+                setSucess(`Consultez votre email ${email} pour changer le mot de passe`)
+                setEmail("");
+                setTimeout(() => {
+                    props.history.push('/login')
+                }, 5000)
+            })
+            .catch(error => {
+                setError(error);
+                setEmail("");
+            })
     }
 
     const disabled = email === ""
@@ -39,12 +39,12 @@ const ForgetPassword = props => {
                 <div className="formBoxRight">
                     <div className="formContent">
 
-                        { sucess && <span 
-                                style={{
+                        {sucess && <span
+                            style={{
                                 border: "1px solid green",
                                 background: "green",
                                 color: "#ffffff",
-                        }}
+                            }}
                         >
                             {sucess}
                         </span>
@@ -59,12 +59,12 @@ const ForgetPassword = props => {
                                 <label htmlFor="email">Email</label>
                             </div>
                             <label for="switch">
-                            <button disabled={disabled}>Récupérer</button>
+                                <button disabled={disabled}>Récupérer</button>
                             </label>
 
                         </form>
                         <div className="linkContainer">
-                            <Link className="simpleLink" to="/login">Déja inscrit? Connectez-vous.</Link>
+                            <Link className="simpleLink" to="/login">Déja inscrit ? Connectez-vous.</Link>
                         </div>
                     </div>
                 </div>

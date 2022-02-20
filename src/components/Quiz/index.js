@@ -8,8 +8,6 @@ import QuizOver from '../QuizOver'
 import { FaChevronRight } from 'react-icons/fa';
 import './Quiz.css'
 
-
-
 toast.configure();
 
 const initialState = {
@@ -88,7 +86,7 @@ class Quiz extends Component {
 
             toast.success('Bravo +1', {
                 position: "top-right",
-                autoClose: 200000,
+                autoClose: 2000,
                 hideProgressBar: false,
                 closeOnClick: true,
                 pauseOnHover: true,
@@ -239,7 +237,6 @@ class Quiz extends Component {
                 </button>
             </Fragment>
         )
-
     }
 }
 

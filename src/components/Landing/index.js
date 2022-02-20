@@ -32,7 +32,7 @@ const Landing = () => {
 
   // Clear claws onMouseOut
   const clearImg = () => {
-    if(refWolverine.current.classList.contains('leftClaws')) {
+    if (refWolverine.current.classList.contains('leftClaws')) {
       refWolverine.current.classList.remove('leftClaws')
     } else {
       refWolverine.current.classList.remove('rightClaws')
@@ -41,7 +41,7 @@ const Landing = () => {
 
   const displayBtn = btn && (
     <Fragment>
-       <div className="leftBox" onMouseOver={setLeftImg} onMouseOut={clearImg}>
+      <div className="leftBox" onMouseOver={setLeftImg} onMouseOut={clearImg}>
         <Link className="btn-welcome" to="/signup" >Inscription</Link>
       </div>
       <div className="rightBox" onMouseOver={setRighttImg} onMouseOut={clearImg}>
@@ -51,7 +51,7 @@ const Landing = () => {
   )
 
   return (
-    <main ref={refWolverine}className="welcomePage">
+    <main ref={refWolverine} className="welcomePage">
       {displayBtn}
     </main>
   )
